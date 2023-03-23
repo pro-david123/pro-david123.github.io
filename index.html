@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon/logo.jpeg" type="image/x-icon">
+
+    <!-- Croquet Import (to not have to npm import the entire libary) -->
+    <script src="https://unpkg.com/@croquet/croquet@1.0.5"></script>
+
+    <title>Brown Money | Test Game</title>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <center>
+            <img src="./assets/icons/bill.PNG" class="bill" id="bill">
+        </center>
+        <div class="hud">
+            <div class="players-around">
+                <center>
+                    <div id="players">
+                    </div>
+                    <div id="money">
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="table">
+            <div id="info-boxes">
+                <div id="initial">
+                    <input type="text" placeholder="Game Id" class="input" id="game_id">
+                    <center>
+                        <button id="join-game" class="button" onclick="join_game()">
+                            <center><h1>Join Game</h1></center>
+                        </button>
+                    </center>
+                    <br>
+                    <center>
+                        <button id="create-game" class="button" onclick="create_game()">
+                            <center><h1>Create Game</h1></center>
+                        </button>
+                    </center>
+                    <br>
+                    <center>
+                        <button id="create-game" class="button" onclick="single_player()">
+                            <center><h1>Single Player</h1></center>
+                        </button>
+                    </center>
+                </div>
+                <div class="game_id_display">
+                    <h1 id="game_id_waiting_display"></h1>
+                    <h1 id="players_waiting_display"></h1>
+                </div>
+            </div>
+            <div class="stack-brown-money">
+            </div>
+            <div class="stack-of-cards">
+                <center>
+                <div id="thecard" class="not-turned-over">
+                    <div class="thefront">
+                        <img src="./assets/icons/back.PNG" id="front-card-image">
+                    </div>
+                    <div class="theback">
+                        <img src="./assets/icons/back.PNG" id="back-card-image">
+                    </div>
+                </div>
+                </center>
+            </div>
+            <div class="thestack">
+                <center>
+                    <img src="./assets/icons/stack.PNG" id="stack-image">
+                </center>
+            </div>
+        </div>
+        <div class="card-pulled">
+            <div id="card">
+                <img src="" id="card-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    overflow: hidden;
+}
+
+.button {
+
+    width: 300px;
+
+	border: none;
+	background: rgb(0, 0, 0);
+	color: #fff;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 15px;
+	border-radius: 20px;
+	font-family: 'Open Sans', sans-serif;
+
+    transform: translate(0%, 0);
+}
+
+.message-box {
+    font-family: 'Baloo 2', cursive;
+    
+    width: 30%;
+    height: 450px;
+
+    background-color: #e9eaec;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    margin-top: 250px;
+}
+
+#emoji {
+    font-size: 7vh;
+}
+
+#message {
+    font-size: 3.5vh;
+    margin-bottom: 40px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+}
