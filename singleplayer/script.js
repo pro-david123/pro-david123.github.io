@@ -49,7 +49,7 @@ function draw_card() {
 
     const card_to_draw = game_array[1][turn];
 
-    document.getElementById('back-card-image').src = './assets/icons/' + card_to_draw + '.png';
+    document.getElementById('back-card-image').src = 'https://pro-david123.github.io/singleplayer/assets/icons/' + card_to_draw + '.png';
 
     document.getElementById("thecard").style.transform = "rotateY(180deg)";
   
@@ -147,7 +147,7 @@ function move_card(player, card) {
       // Calculate the starting and ending positions of the div
       setTimeout(() => {
           
-          document.getElementById('card-image').src = './assets/icons/' + card + '.png';
+          document.getElementById('card-image').src = 'https://pro-david123.github.io/singleplayer/assets/icons/' + card_to_draw + '.png';
               
           document.getElementById("thecard").classList.add('turned-over')
           document.getElementById("thecard").classList.remove('not-turned-over');
