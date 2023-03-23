@@ -76,7 +76,7 @@ function move_card(player, card) {
         setTimeout(() => {
 
             
-            document.getElementById('card-image').src = './assets/icons/' + card + '.png';
+            document.getElementById('card-image').src = './assets/icons/' + card + '.PNG';
 
                 
             document.getElementById("thecard").classList.add('turned-over')
@@ -118,7 +118,7 @@ function move_card(player, card) {
         setTimeout(() => {
 
             
-            document.getElementById('card-image').src = './assets/icons/' + card + '.png';
+            document.getElementById('card-image').src = './assets/icons/' + card + '.PNG';
 
                 
             document.getElementById("thecard").classList.add('turned-over')
@@ -482,7 +482,7 @@ class MyView extends Croquet.View {
 
         this.card_to_draw = this.game_array[4][this.game_array[7]];
 
-        document.getElementById('back-card-image').src = './assets/icons/' + this.card_to_draw + '.png';
+        document.getElementById('back-card-image').src = './assets/icons/' + this.card_to_draw + '.PNG';
 
         console.log('Label: card to draw');
         console.log(this.card_to_draw);
