@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon/logo.jpeg" type="image/x-icon">
+
+    <!-- Croquet Import (to not have to npm import the entire libary) -->
+    <script src="https://unpkg.com/@croquet/croquet@1.0.5"></script>
+
+    <title>Brown Money | Test Game</title>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <center>
+            <img src="./assets/icons/bill.PNG" class="bill" id="bill">
+        </center>
+        <div class="hud">
+            <div class="players-around">
+                <center>
+                    <div id="players">
+                        <center><div id='player1' class='player_name_container_general'><h1 class='player_name'>BOT Level 1</h1><h1 class='player_money' id='player_money_1'>0$</h1></div></center>
+                    </div>
+                    <div id="money">
+                        <center><h1 class='player_money' id='player_money_0'>x 0</h1></center>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="table">
+            <div id="info-boxes">
+                <div id="initial">
+                    <br>
+                    <center>
+                        <button id="join-game" class="button" onclick="quit_game()">
+                            <center><h1><- Quit</h1></center>
+                        </button>
+                    </center>
+                </div>
+            </div>
+            <div class="stack-brown-money">
+            </div>
+            <div class="stack-of-cards">
+                <center>
+                <div id="thecard" class="not-turned-over">
+                    <div class="thefront">
+                        <img src="./assets/icons/back.PNG" id="front-card-image">
+                    </div>
+                    <div class="theback">
+                        <img src="./assets/icons/back.PNG" id="back-card-image">
+                    </div>
+                </div>
+                </center>
+            </div>
+            <div class="thestack">
+                <center>
+                    <img src="./assets/icons/stack.PNG" id="stack-image">
+                </center>
+            </div>
+        </div>
+        <div class="card-pulled">
+            <div id="card">
+                <img src="" id="card-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
