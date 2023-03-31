@@ -87,7 +87,7 @@ function load_money(amount) {
 
     for(let y = 0; y < amount; y++) {
         //Saved as money_bill1
-        document.getElementById('stack-brown-money').innerHTML += '<div id="money_bill' + y + '"><img src="./assets/icons/bill.PNG" id="brown_money" class="bill"  style="transform: translate(' + (y).toString() + 'px, ' + (500 - (y * 2)).toString() + '%);"></div>';
+        document.getElementById('stack-brown-money').innerHTML += '<div id="money_bill' + y + '"><img src="./assets/icons/bill.png" id="brown_money" class="bill"  style="transform: translate(' + (y).toString() + 'px, ' + (500 - (y * 2)).toString() + '%);"></div>';
     }
 
 }
