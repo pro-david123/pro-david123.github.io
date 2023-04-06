@@ -420,7 +420,7 @@ function move_card(player, card) {
                     { transform: `translate(${endX}px, ${startY}px)` },
                     { transform: `translate(${endX}px, ${endY}px)` },
                 ],
-                { duration: 2000 }
+                { duration: 1500 }
                 );
 
                 // When the vertical animation is finished, update the div's position
@@ -468,7 +468,7 @@ function move_card(player, card) {
                     { transform: `translate(${startX}px, ${startY}px)` },
                     { transform: `translate(${endX - 100}px, ${startY}px)` },
                     ],
-                    { duration: 500 }
+                    { duration: 1500 }
                 );
 
                 // When the horizontal animation is finished, create an animation for the vertical movement
@@ -478,7 +478,7 @@ function move_card(player, card) {
                         { transform: `translate(${endX - 100}px, ${startY}px)` },
                         { transform: `translate(${endX - 100}px, ${endY}px)` },
                     ],
-                    { duration: 500 }
+                    { duration: 1000 }
                     );
 
                     // When the vertical animation is finished, update the div's position
