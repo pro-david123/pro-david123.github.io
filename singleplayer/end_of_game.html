@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./css/end_of_game.css">
+    <link rel="shortcut icon" href="./assets/favicon/logo.jpeg" type="image/x-icon">
+
+    <title>Brown Money | Game Ended</title>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="confetti">
+            <canvas id="canvas"></canvas>
+        </div>
+        <center>
+            <div class="message-box">
+                <div class="message-emoji">
+                    <h1 id="emoji"></h1>
+                </div>
+                <div class="message">
+                    <h1 id="message"></h1>
+                </div>
+                <div class="new-game">
+                    <button class="button" onclick="go_game()">
+                        <h1>New game</h1>
+                    </button>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <script src="./assets/scripts/plugins/confetti.js"></script>
+    <script src="./assets/scripts/end_of_game.js"></script>
+</body>
+</html>
