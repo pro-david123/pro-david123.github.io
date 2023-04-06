@@ -6,8 +6,8 @@ const local_game_id = urlParams.get('p');
 const players_for_start = 2;
 const kick_url = './error.html';
 const unshuffled_array = ['S','S','S',      'C','C','C','C','C','C','C','C','C','C','C','C','C','C','C','C',    'B','B','B','B','B',    'I','I','I','I','I','I','I','I','I','I',    'M','M', 'T','T','T','T'];
-const won_url = './error.html';
-const lost_url = './error.html';
+const won_url = './end_of_game.html?w=true';
+const lost_url = './end_of_game.html?w=false';
 
 let view_id = '';
 let player_num;
