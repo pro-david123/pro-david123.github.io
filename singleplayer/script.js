@@ -492,7 +492,7 @@ function move_card(player, card) {
                     };
                 };
             }, 1000);
-      }, 500);
+      }, 1500);
   }
 
 }
